@@ -1,2 +1,1 @@
-# michaelgarfield2357.github.io
-personal website
+Hi! Welcome to my personal website!
