@@ -1,0 +1,179 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+header {
+  padding: 10rem 1.5rem;
+  text-align: center;
+
+  /* Background image */
+  background-image: url("images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: rgb(98, 113, 231);
+  position: relative;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1rem;
+
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #020617;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #bfdbfe;
+}
+
+#fun-fact-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#fun-fact-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+#fun-fact-button:active {
+  transform: translateY(0);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link .card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-link:hover .card {
+  transform: scale(1.06);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+}
+
+.project-link .card {
+  cursor: pointer;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #020617;
+  color: #9ca3af;
+}
