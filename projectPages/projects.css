@@ -66,6 +66,14 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
+.media video {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 18px;
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
