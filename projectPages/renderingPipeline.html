@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Fractals!</title>
+    <title>3D Rendering Pipeline</title>
 
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="projects.css" />
@@ -14,42 +14,42 @@
 
 <body>
 
-    <header class="project-header" style="background-image: url('../images/machineLearningHeader.png');">
+    <header class="project-header" style="background-image: url('../images/pipelineAssets/2.png');">
         <div class="header-overlay">
-            <h1>Fractals</h1>
+            <h1>3D Rendering Pipeline</h1>
         </div>
+        <span class="image-credit">Credit: .obj file downloaded from TinkerCAD</span>
     </header>
 
     <section class="project-section">
         <h2>Description</h2>
         <p>
-            Here are a few pretty fractals I generated with Python, Pygame, and the standard Python math library.
-            The coral reef like structure is generated similar to the image shown on the Wikipedia page for
-            the Collatz Conjecture. Enjoy!
+            A 3D rendering pipeline built from scratch using Python, Pygame, and the standard Python Math library.
+            I worked on this project in Grade 12 in high school. The rendering pipeline included in the GitHub repository
+            represents the second version of the rendering pipeline I originally built in the summer of Grade 11. The second
+            pipeline includes some basic shading and the standard transformation matrices; although the first pipeline includes
+            occlusion algorithms such as the Painter's algorithm as well as a polygon clipping algorithm - which meant a lot 
+            more computation and a lot slower. The second version takes advantage of the reduced computation in the transformation
+            of the vertices encoded in the .obj file format which speeds up the pipeline - which meant that I could render a lot more
+            triangles. 
         </p>
     </section>
 
     <section class="project-section">
-        <h2>Photos</h2>
+        <h2>Media</h2>
 
         <div class="media-grid">
-            <img src="../images/machineLearningAssets/Screenshot1.png" alt="fractal 1" />
-            <img src="../images/machineLearningAssets/Screenshot2.png" alt="fractal 2" />
-            <img src="../images/machineLearningAssets/Screenshot3.png" alt="fractal 3" />
+            <img src="../images/pipelineAssets/1.png" alt="fractal 1" />
+            <img src="../images/pipelineAssets/2.png" alt="fractal 2" />
         </div>
 
     </section>
-    
+
     <section class="project-section">
-        <h2>Videos</h2>
-
-        <div class="media">
-
-        <video controls>
-            <source src="../images/fft-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        </div>
+        <h2>Source Code</h2>
+        <a class="link-accent" href="https://github.com/MichaelGarfield2357/3D-Rendering-Pipeline-V2" target="_blank">
+            View on GitHub
+        </a>
     </section>
 
     <footer class="project-footer">
